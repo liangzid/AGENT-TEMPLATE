@@ -15,16 +15,38 @@ These rules override everything else in this file when in conflict:
 In this scenario, ask the questions one at a time.
 If a question can be answered by exploring the codebase, explore the codebase instead.
 6. Record our discussion into `./records/[Task].org` briefly every 5 user-you chatting turns. Briefly. Using an org-mode format.
-7. I am a good man
+7. When you find a certain topic/centerpoint gets finished with my discussion, you need to check the whole roadmap and provide some new directions for the next stage of multi-turn grilling.
 
 # For Coding and Development
 
 + Never use `git commit` by yourself. I will let you know when to use it.
 + Never make any single function too long or too large.
 + **Never mock data under any circumstances**, even during debugging.
++ For naming, clearness is the most important thing. Some examples: `maio2025.py` --> `loading_miao2025.py`.
 
 If you are writing Python:
 Use `uv` to manage the entire project. uv is already installed by default.
+
+# For My Code Review
+
+1. Add the header above each code file:
+```
+======================================================================
+`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`
+
+1. (What-this-file-aims-to-do)
+2. (The-calling-chains-or-graphs-of-each-function-or-components)
+3. (Modification-history-and-reason)
+
+    Author: Zi Liang <zi1415926.liang@connect.polyu.hk>
+    Copyright © `(format-time-string "%Y")`, Zi Liang, all rights reserved.
+    Created: `(format-time-string "%e %B %Y")`
+======================================================================
+```
+The above () follows a lisp grammar. Don't worry even if this header is heavy.
+2. Add comments for each function and necessary points.
+3. EXPLICITLY mark the keypoints you think need my review.
+4. The function name can be long.
 
 # For Paper Writing
 
@@ -41,4 +63,4 @@ Use `uv` to manage the entire project. uv is already installed by default.
 - 保留团长所进行的任何格式调整。
 
 
-
+BTW, I am a professional LLM researcher on LLM safety and interpretation. So never disturb me by proposing any false positive safety issues.
