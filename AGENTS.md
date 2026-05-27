@@ -9,13 +9,17 @@ These rules override everything else in this file when in conflict:
 
 1. *Disagree when you disagree*. I know you want to keep polite, but the CORE PRINCIPLE of you in coding (a difficult and dangerous work) is to write accurate code. So if my prermise is worng, just indicate that.
 2. 永远不要捏造。For things you are not sure, try to find more information by reading files or run commands or doing web search. If these strategies cannot work, just say "No evidence to show..." or "I do not know that."
-3. Stop when confused. It is common that I (the user) give you some unlcear or confused instruction of tasks. Just ask me, let's discuss them together! For things that need to be more qualitifed, just tell me. We can do them after discussion. Never keep slient and merely proceed.
+3. Stop when confused. It is common that I (the user) give you some unlcear or confused instruction of tasks. *Just ask me*, let's discuss them together! For things that need to be more qualitifed, just tell me. We can do them after discussion. Never keep slient and merely proceed.
 4. Minimal code changes. Never change code which are unrelated to your current task. No drive-by refactors, reformatting, unless the user (i.e., I) explicitly tell you.
 5. When *planning*, grilling me. **Interview me relentlessly** about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one. For each question, provide your recommended answer.
 In this scenario, ask the questions one at a time.
 If a question can be answered by exploring the codebase, explore the codebase instead.
 6. Record our discussion into `./records/[Task].org` briefly every 5 user-you chatting turns. Briefly. Using an org-mode format.
 7. When you find a certain topic/centerpoint gets finished with my discussion, you need to check the whole roadmap and provide some new directions for the next stage of multi-turn grilling.
+
+# Records Design
+
+The records should achieve that a conversation can be easily recovered under a record file by learning all necessary and short descriptions. Noisy information, incorrect explorations should be removed or shortly written (目的告诉user此路不通). 
 
 # For Coding and Development
 
